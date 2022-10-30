@@ -28,6 +28,11 @@ const ExpenseForm = () => {
     };
 
     console.log(expenseData);
+
+    //Set empty string to clear input field after submitting form and set value field in input
+    setEnteredTitle("");
+    setEnteredAmount("");
+    setEnteredDate("");
   };
 
   return (
@@ -36,24 +41,30 @@ const ExpenseForm = () => {
       <div className="new-expense__controls ">
         <div className="new-expense__control">
           <label>Title</label>{" "}
-          <input onChange={titleChangeHandler} type="text" />
+          <input
+            type="text"
+            value={enteredTitle}
+            onChange={titleChangeHandler}
+          />
         </div>
         <div className="new-expense__control">
           <label>Amount</label>{" "}
           <input
-            onChange={amountChangeHandler}
             type="number"
             min="0.1"
             step="0.1"
+            value={enteredAmount}
+            onChange={amountChangeHandler}
           />
         </div>
         <div className="new-expense__control">
           <label>Date</label>{" "}
           <input
-            onChange={dateChangeHandler}
             type="date"
             min="2022-01-01"
             max="2025-12-31"
+            value={enteredDate}
+            onChange={dateChangeHandler}
           />
         </div>
       </div>
