@@ -9,6 +9,7 @@ function Expenses(props) {
       {/* Used Map function to dynamically allocate data to ExpenseItem Components*/}
       {props.items.map((expense) => (
         <ExpenseItem
+          key={expense.id}
           title={expense.title}
           amount={expense.amount}
           date={expense.date}
