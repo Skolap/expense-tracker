@@ -29,7 +29,9 @@ function App() {
   //Function to get data from NewExpense
   const addExpenseHandler = (expense) => {
     //set Array and add new expense to top and dummy expense below
-    setExpense([expense, ...expenses]);
+    setExpense((prevExpenses) => {
+      return [expense, ...prevExpenses];
+    });
   };
   return (
     <div>
