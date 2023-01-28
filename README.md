@@ -32,7 +32,7 @@ React, Firebase Hosting
 <img src="./Assets/screenshots/1.png" width="500"> <br>
 <img src="./Assets/screenshots/2.png" width="500"> <br>
 <br>
-![Demo]()
+![Demo](https://github.com/Skolap/expense-tracker/blob/main/Assets/screenshots/3.gif?raw=true)
 
 <!-- ![Alt text](/src/assets/screenshots/1.png?raw=true "Home")
 ![Alt text](/src/assets/screenshots/2.png?raw=true "Cart")
