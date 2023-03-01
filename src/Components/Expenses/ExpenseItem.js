@@ -2,6 +2,8 @@ import React from "react";
 import "./ExpenseItem.css";
 import ExpenseDate from "./ExpenseDate";
 import Card from "../UI/Card";
+
+// Get Props from ExpenseList
 function ExpenseItem(props) {
   return (
     <li>

@@ -1,6 +1,8 @@
 import React from "react";
 import "./NewExpense.css";
 import ExpenseForm from "./ExpenseForm";
+
+// Getting Props from App
 function NewExpense(props) {
   //Send data to app.js
   const saveExpanseDataHandler = (enteredExpanseData) => {

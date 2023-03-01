@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./ExpenseForm.css";
 
+// Get Props from NewExpense
 const ExpenseForm = (props) => {
   // Define states for storing user input data
   const [enteredTitle, setEnteredTitle] = useState("");
@@ -29,7 +30,7 @@ const ExpenseForm = (props) => {
     };
 
     //State uplift
-    //send data to NewExpense Component
+    //send data to NewExpense Component >> App.js
     props.onSaveExpanseData(expenseData);
 
     //Set empty string to clear input field after submitting form and set value field in input

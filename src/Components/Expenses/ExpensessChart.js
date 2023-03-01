@@ -1,6 +1,7 @@
 import React from "react";
 import Chart from "../Chart/Chart";
 
+// Getting Props from Chart
 const ExpensessChart = (props) => {
   const chartDataPoint = [
     { label: "Jan", value: 0 },

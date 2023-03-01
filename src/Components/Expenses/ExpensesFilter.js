@@ -2,7 +2,9 @@ import React from "react";
 
 import "./ExpensesFilter.css";
 
+// Getting Props from Expenses
 const ExpensesFilter = (props) => {
+  // Send selected year to Expense
   const dropdownChangeHandler = (event) => {
     props.onChangeFilter(event.target.value);
   };
